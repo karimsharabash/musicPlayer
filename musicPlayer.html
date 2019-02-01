@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <style>
+            body{
+                margin:100px auto;
+                text-align: center;
+                background-image:url(colorful_note.jpg);
+                background-image:10%;
+            }
+            button{
+                border-radius: 15%;
+                background-color:royalblue;
+                color: black;
+                border:none;
+            }
+            #musicList {
+                background: 100%;
+                border:1px solid #009688;
+                border-radius:2px;
+                width:30%;
+                color:#009688;
+                background-image: url(music_bg.jpg);
+                text-align: left;
+                padding:10px;
+            }
+            #controlBtns{
+                border:2px solid #233572;
+                border-radius:10px;
+                width:30%;
+                height: 20px;
+                background-color: black;
+            }
+            div{
+                margin:20px auto;
+            }
+            a{
+                /* //background-color:black; */
+               
+                text-decoration: none;
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            }
+     
+        </style>
+</head>
+<body>
+    <div>
+        <audio controls id="mySong">
+                <source src="1.mp3" type="audio/mpeg">  
+        </audio>
+        <br>
+    <div id="controlBtns">
+    <button id="prevBtn" >Prev</button>     
+    <button id="shuffleBtn" >Shuffle</button>     
+    <button id="repeatBtn" >Repeat</button>     
+    <button id="playBtn" >Play</button>
+    <button id="nextBtn" >Next</button>
+    </div>
+    <div id="musicList">
+     <a href="#" id="song1">What a wonderful world</a>
+     <br>
+     <br>
+     <a href="#" id="song2">My way</a>
+     <br>
+     <br>
+     <a href="#" id="song3">Killing me softly</a>
+      <br>
+     <br>
+     <a href="#" id="song4">Hit the road Jack</a>
+    </div>     
+    </div>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
