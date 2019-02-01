@@ -2,8 +2,7 @@ var list=["1.mp3","2.mp3","3.mp3","4.mp3"];
 var shuffledList=[];
 var currentSong=list[0];
 var index=0;
-
-
+var SongsCount=4;
 var first =document.getElementById("song1");
 var sec   =document.getElementById("song2");
 var third =document.getElementById("song3");
@@ -84,7 +83,7 @@ shuffleBtn.addEventListener("click",function()
       
         var newIndex =0;
         var found =false;
-        for(var i=0; i<4 ;i++)
+        for(var i=0; i<SongsCount ;i++)
         {
             newIndex=Math.floor(Math.random() * list.length);
             console.log(newIndex);
@@ -133,7 +132,7 @@ function playNext()
         {
             musicPlayer.stop();
         }
-        index=(index+1)%4;
+        index=(index+1)%SongsCount;
     if(!shuffle)
     {
         musicPlayer.src=list[index];
